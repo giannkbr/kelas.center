@@ -1,6 +1,7 @@
 :root {
   --primary: #c19d6c;
   --secondary: #f4f4f4;
+  --tertiory: #2d6075;
   --hover: #eee5d8f2;
   --hover-card: #e0eff5;
   --dark: #1a1a1a;
@@ -77,6 +78,23 @@ a {
   border: 2px solid var(--light);
   color: #fff;
   background: var(--light);
+}
+
+.btn-tertiory-kelas {
+  background: var(--tertiory);
+  border: 2px solid var(--tertiory);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn-tertiory-kelas:hover {
+  background: transparent;
+  border: 2px solid var(--tertiory);
+  color: var(--tertiory);
 }
 
 /* Hero */
