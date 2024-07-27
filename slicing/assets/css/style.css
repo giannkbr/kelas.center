@@ -258,7 +258,7 @@ a {
   .btn-primary-kelas,
   .btn-outline-kelas,
   .btn-tertiory-kelas {
-    margin: 10px 0;
+    max-width: 300px;
   }
 
   .cta {
