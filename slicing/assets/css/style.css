@@ -1,7 +1,9 @@
 :root {
   --primary: #c19d6c;
   --secondary: #f4f4f4;
-  --dark: #333;
+  --hover: #eee5d8f2;
+  --dark: #1a1a1a;
+  --dark-secondary: #14100c;
   --light: #fff;
 }
 
@@ -77,4 +79,23 @@ p {
   height: 100px;
   gap: 0px;
   opacity: 0px;
+}
+
+/* CTA */
+.cta-container {
+  background: url('../img/banner/banner-cta.png') no-repeat center center/cover;
+}
+
+.cta {
+  background: var(--hover);
+  color: #fff;
+  padding: 50px 0;
+}
+
+.cta h1 {
+  color: var(--dark);
+}
+
+.cta p {
+  color: var(--dark-secondary);
 }
