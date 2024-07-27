@@ -66,6 +66,18 @@ a {
   background: var(--primary);
 }
 
+.btn-outline-kelas-2 {
+  border: 2px solid var(--light);
+  color: var(--light);
+  background: transparent;
+}
+
+.btn-outline-kelas-2:hover {
+  border: 2px solid var(--light);
+  color: #fff;
+  background: var(--light);
+}
+
 /* Hero */
 .hero {
   background: url('../img/banner/banner-hero.png') no-repeat center center/cover;
@@ -103,4 +115,13 @@ a {
 
 .cta p {
   color: var(--dark-secondary);
+}
+
+/* Kenap[a kelas center */
+/* .kenapa-kelas-center {
+  padding: 50px 0;
+} */
+
+.kenapa-kelas-center .bg-kenapa-kelas-center {
+  background-color: var(--primary);
 }
