@@ -92,9 +92,8 @@ a {
 }
 
 .partner-logo {
-  max-width: fit-content;
   margin: 0 auto;
-  height: 100px;
+  max-width: 100px;
   gap: 0px;
   opacity: 0px;
 }
