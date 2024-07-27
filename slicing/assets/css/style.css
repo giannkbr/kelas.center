@@ -100,19 +100,18 @@ a {
 /* Hero */
 .hero {
   background: url('../img/banner/banner-hero.png') no-repeat center center/cover;
-  /* height: 450px; */
+  padding: 100px 20px;
+  text-align: center;
 }
 
 /* Support */
 .partner {
   background: var(--secondary);
-  /* padding: 50px 0; */
 }
 
 .partner-logo {
   margin: 0 auto;
   max-width: 100px;
-  gap: 0px;
   opacity: 0px;
 }
 
@@ -124,7 +123,6 @@ a {
 .cta {
   background: var(--hover);
   color: #fff;
-  padding: 50px 0;
 }
 
 .cta h1 {
@@ -135,7 +133,7 @@ a {
   color: var(--dark-secondary);
 }
 
-/* Kenap[a kelas center */
+/* Kenapa Kelas Center */
 .kenapa-kelas-center .card-kenapa {
   background-color: var(--light);
   border-radius: 0.3rem;
@@ -148,4 +146,136 @@ a {
 
 .kenapa-kelas-center .bg-kenapa-kelas-center {
   background-color: var(--primary);
+}
+
+/* Scrollable partner logos */
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+
+.scroll-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; /* Ensure logos are centered on desktop */
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+.partner-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.scroll-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: var(--primary);
+}
+
+/* Learning */
+.learning {
+  padding: 20px 0;
+}
+
+.learning .container {
+  max-width: 100%;
+}
+
+.learning .card img {
+  width: 100%;
+  height: auto;
+}
+
+.learning .carousel-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+  .learning .card {
+    margin-bottom: 15px;
+  }
+  .learning .carousel-item .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .learning .carousel-item .col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+.btn-outline-kelas {
+  margin-bottom: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .lead {
+    font-size: 1.25rem;
+  }
+
+  .partner .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partner-logo {
+    margin: 10px;
+  }
+
+  .btn-primary-kelas,
+  .btn-outline-kelas,
+  .btn-tertiory-kelas {
+    margin: 10px 0;
+  }
+
+  .cta {
+    padding: 30px 20px;
+  }
+
+  .kenapa-kelas-center .card-kenapa {
+    margin-bottom: 20px;
+  }
+
+  .row-scroll {
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .col-scroll {
+    min-width: 200px;
+  }
 }
