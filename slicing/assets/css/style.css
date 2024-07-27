@@ -1,0 +1,60 @@
+:root {
+  --primary: #c19d6c;
+  --secondary: #f4f4f4;
+  --dark: #333;
+  --light: #fff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url('../fonts/Gotham-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('../fonts/Gotham-Light.otf') format('opentype');
+}
+
+body {
+  font-family: 'Gotham Light', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gotham Medium', sans-serif;
+}
+
+p {
+  font-family: 'Gotham Light', sans-serif;
+}
+
+/* Button */
+.btn-primary-kelas {
+  background: var(--primary);
+  border: 2px solid var(--primary);
+  color: #fff;
+  margin: 0 10px;
+}
+
+.btn-primary-kelas:hover {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-kelas {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-outline-kelas:hover {
+  border: 2px solid var(--primary);
+  color: #fff;
+  background: var(--primary);
+}
