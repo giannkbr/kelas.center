@@ -64,3 +64,14 @@ p {
   background: url('../img/banner/banner-hero.png') no-repeat center center/cover;
   /* height: 450px; */
 }
+
+/* Support */
+.support {
+  background: var(--secondary);
+  padding: 50px 0;
+}
+
+.support-logo {
+  max-width: fit-content;
+  margin: 0 auto;
+}
