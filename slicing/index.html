@@ -132,8 +132,8 @@
           <h1 class="display-5 fw-bold">Pilihan Paket Untuk Perusahaan di Kelas Center</h1>
           <div class="row text-start row-scroll">
             <div class="col-md-4 col-scroll col-10">
-              <div class="card my-3 bg-light">
-                <div class="card-body">
+              <div class="card my-3 bg-light rounded-2">
+                <div class="card-body card-kenapa">
                   <h5 class="my-2" style="text-align: left">
                     <i class="bi bi-lamp mr-2"></i>
                     <span class="ml-5">Starter</span>
@@ -162,8 +162,8 @@
             </div>
 
             <div class="col-md-4 col-scroll col-10">
-              <div class="card my-3 bg-light">
-                <div class="card-body">
+              <div class="card my-3 bg-light rounded-2">
+                <div class="card-body card-kenapa">
                   <h5 class="my-2" style="text-align: left">
                     <i class="bi bi-lamp mr-2"></i>
                     <span class="ml-5">Starter</span>
@@ -192,8 +192,8 @@
             </div>
 
             <div class="col-md-4 col-scroll col-10">
-              <div class="card my-3 bg-light">
-                <div class="card-body">
+              <div class="card my-3 bg-light rounded-2">
+                <div class="card-body card-kenapa">
                   <h5 class="my-2" style="text-align: left">
                     <i class="bi bi-lamp mr-2"></i>
                     <span class="ml-5">Starter</span>
@@ -251,6 +251,65 @@
       </div>
     </section>
 
+    <section class="learning">
+      <div class="px-4 py-5">
+        <div class="my-5">
+          <h1 class="display-5 fw-bold text-center">Lebih dari 2000+ Learning Video</h1>
+          <div class="col-lg-10 mx-auto">
+            <p class="lead mb-4 text-center">
+              Kami juga sudah menyediakan banyak pelatihan yang beragam, pelatihan disusun dan dibuat oleh tim kurikulum profesional bersama tim video profesional untuk menghasilkan video dengan
+              kualitas tinggi
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button id="btnKelasCom" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">Kelas.com</button>
+              <button id="btnKelasWork" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">Kelas.work</button>
+              <button id="btnBootcamp" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">Bootcamp</button>
+            </div>
+
+            <div id="carouselKelasCom" class="carousel slide py-5 video-section" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselKelasCom" data-bs-slide-to="0" class="active bg-custom" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselKelasCom" data-bs-slide-to="1" class="bg-custom" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-6 col-md-3 mt-3 mt-md-0">
+                      <div class="card">
+                        <div style="position: relative">
+                          <img src="./assets/img/assets/thumbnail-video.png" class="card-img-top" alt="..." />
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <i class="bi bi-play-circle-fill text-white" style="font-size: 2rem"></i>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <h6 class="card-subtitle mt-3 mb-2 text-body-secondary">Pandji Pragiwaksono</h6>
+                          <p class="text-body-secondary p-0 m-0">Presenter Televisi & Komika</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselKelasCom" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselKelasCom" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div id="carouselKelasWork" class="carousel slide py-5 d-none video-section" data-bs-ride="carousel"></div>
+
+            <div id="carouselBootcamp" class="carousel slide py-5 d-none video-section" data-bs-ride="carousel"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="cta-container">
       <div class="px-4 py-5 text-center cta">
         <div class="py-5">
@@ -297,8 +356,27 @@
 
     <script src="./assets/js/bootstrap.bundle.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
     <script>
-      const carousel = new bootstrap.Carousel('#partnerCarousel');
+      document.getElementById('btnKelasCom').addEventListener('click', function () {
+        document.getElementById('carouselKelasCom').classList.remove('d-none');
+        document.getElementById('carouselKelasWork').classList.add('d-none');
+        document.getElementById('carouselBootcamp').classList.add('d-none');
+      });
+
+      document.getElementById('btnKelasWork').addEventListener('click', function () {
+        document.getElementById('carouselKelasCom').classList.add('d-none');
+        document.getElementById('carouselKelasWork').classList.remove('d-none');
+        document.getElementById('carouselBootcamp').classList.add('d-none');
+      });
+
+      document.getElementById('btnBootcamp').addEventListener('click', function () {
+        document.getElementById('carouselKelasCom').classList.add('d-none');
+        document.getElementById('carouselKelasWork').classList.add('d-none');
+        document.getElementById('carouselBootcamp').classList.remove('d-none');
+      });
     </script>
   </body>
 </html>
