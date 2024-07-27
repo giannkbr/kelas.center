@@ -158,7 +158,8 @@ a {
 .scroll-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center; /* Ensure logos are centered on desktop */
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll-item {
