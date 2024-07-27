@@ -66,12 +66,15 @@ p {
 }
 
 /* Support */
-.support {
+.partner {
   background: var(--secondary);
   padding: 50px 0;
 }
 
-.support-logo {
+.partner-logo {
   max-width: fit-content;
   margin: 0 auto;
+  height: 100px;
+  gap: 0px;
+  opacity: 0px;
 }
