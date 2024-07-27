@@ -28,11 +28,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gotham Bold', sans-serif;
+  font-family: 'Gotham Bold';
 }
 
 p {
-  font-family: 'Gotham Light', sans-serif;
+  font-family: 'Gotham Light';
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Gotham Light';
 }
 
 /* Button */
@@ -70,7 +75,7 @@ p {
 /* Support */
 .partner {
   background: var(--secondary);
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .partner-logo {
