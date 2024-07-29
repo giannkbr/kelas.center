@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CategoryBenefits;
+use App\Models\Benefits;
+use App\Models\CategoryKelas;
 
 class HomeController extends Controller
 {
@@ -15,7 +17,9 @@ class HomeController extends Controller
 
 	function index()
 	{
+        $benefits = Benefits::all();
         $categoryBenefits = CategoryBenefits::all();
-        return view('frontend.layouts.app', compact('categoryBenefits'));
+        $categoryKelas = CategoryKelas::all();
+        return view('frontend.layouts.app', compact('categoryBenefits' , 'benefits', 'categoryKelas'));
 	}
 }

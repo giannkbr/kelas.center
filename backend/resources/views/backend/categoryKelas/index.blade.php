@@ -5,7 +5,7 @@
     <h1>Category Benefits</h1>
     <nav>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="{{ route('categoryBenefit.index') }}">Category Benefits</a></li>
+            <li class="breadcrumb-item active"><a href="{{ route('categoryKelas.index') }}">Category Benefits</a></li>
             {{-- <li class="breadcrumb-item active">nama halaman aktif</li> --}}
         </ol>
     </nav>
@@ -28,7 +28,7 @@
                     {{-- <h5 class="card-title">Category</h5> --}}
 
                     <div class="mb-3 mt-3">
-                        <a href="{{ route('categoryBenefit.create') }}" class="btn btn-primary">Add Category</a>
+                        <a href="{{ route('categoryKelas.create') }}" class="btn btn-primary">Add Category</a>
                     </div>
 
                     <!-- Table with stripped rows -->
@@ -40,12 +40,12 @@
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        @foreach ($categories as $category)
+                        @foreach ($categoryKelas as $category)
                         <tr>
                             <td>{{ $category->name }}</td>
                             <td>
-                                <a href="{{ route('categoryBenefit.edit', $category->id) }}" class="btn btn-primary">Edit</a>
-                                <form action="{{ route('categoryBenefit.destroy', $category->id) }}" method="POST"
+                                <a href="{{ route('categoryKelas.edit', $category->id) }}" class="btn btn-primary">Edit</a>
+                                <form action="{{ route('categoryKelas.destroy', $category->id) }}" method="POST"
                                     style="display:inline">
                                     @csrf
                                     @method('DELETE')

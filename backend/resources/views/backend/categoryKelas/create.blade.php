@@ -4,9 +4,9 @@
     <div class="row">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"> Category Benefits</h5>
+                <h5 class="card-title"> Category</h5>
 
-                <form action="{{ route('categoryBenefits.store') }}" method="POST">
+                <form action="{{ route('categoryKelas.store') }}" method="POST">
                     @csrf
                     <div class="row mb-3">
                         <label for="input" class="col-sm-2 col-form-label">Name</label>

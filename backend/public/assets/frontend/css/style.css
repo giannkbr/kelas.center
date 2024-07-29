@@ -1,27 +1,27 @@
 :root {
-  --primary: #c19d6c;
-  --secondary: #f4f4f4;
-  --tertiory: #2d6075;
-  --hover: #eee5d8f2;
-  --hover-card: #e0eff5;
-  --dark: #1a1a1a;
-  --dark-secondary: #14100c;
-  --light: #fff;
+    --primary: #c19d6c;
+    --secondary: #f4f4f4;
+    --tertiory: #2d6075;
+    --hover: #eee5d8f2;
+    --hover-card: #e0eff5;
+    --dark: #1a1a1a;
+    --dark-secondary: #14100c;
+    --light: #fff;
 }
 
 /* Fonts */
 @font-face {
-  font-family: 'Gotham Bold';
-  src: url('../fonts/Gotham-Bold.otf') format('opentype');
+    font-family: "Gotham Bold";
+    src: url("../fonts/Gotham-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Gotham Light';
-  src: url('../fonts/Gotham-Light.otf') format('opentype');
+    font-family: "Gotham Light";
+    src: url("../fonts/Gotham-Light.otf") format("opentype");
 }
 
 body {
-  font-family: 'Gotham Light', sans-serif;
+    font-family: "Gotham Light", sans-serif;
 }
 
 h1,
@@ -30,253 +30,255 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gotham Bold';
+    font-family: "Gotham Bold";
 }
 
 p {
-  font-family: 'Gotham Light';
+    font-family: "Gotham Light";
 }
 
 a {
-  text-decoration: none;
-  font-family: 'Gotham Light';
+    text-decoration: none;
+    font-family: "Gotham Light";
 }
 
 /* Button */
 .btn-primary-kelas {
-  background: var(--primary);
-  border: 2px solid var(--primary);
-  color: #fff;
-  margin: 0 10px;
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    color: #fff;
+    margin: 0 10px;
 }
 
 .btn-primary-kelas:hover {
-  background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
 }
 
 .btn-outline-kelas {
-  border: 2px solid var(--primary);
-  color: var(--primary);
-  background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
 }
 
 .btn-outline-kelas:hover {
-  border: 2px solid var(--primary);
-  color: #fff;
-  background: var(--primary);
+    border: 2px solid var(--primary);
+    color: #fff;
+    background: var(--primary);
 }
 
 .btn-outline-kelas-2 {
-  border: 2px solid var(--light);
-  color: var(--light);
-  background: transparent;
+    border: 2px solid var(--light);
+    color: var(--light);
+    background: transparent;
 }
 
 .btn-outline-kelas-2:hover {
-  border: 2px solid var(--light);
-  color: #fff;
-  background: var(--light);
+    border: 2px solid var(--light);
+    color: #fff;
+    background: var(--light);
 }
 
 .btn-tertiory-kelas {
-  background: var(--tertiory);
-  border: 2px solid var(--tertiory);
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  display: inline-block;
-  width: 100%;
+    background: var(--tertiory);
+    border: 2px solid var(--tertiory);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    display: inline-block;
+    width: 100%;
 }
 
 .btn-tertiory-kelas:hover {
-  background: transparent;
-  border: 2px solid var(--tertiory);
-  color: var(--tertiory);
+    background: transparent;
+    border: 2px solid var(--tertiory);
+    color: var(--tertiory);
 }
 
 /* Hero */
 .hero {
-  background: url('../img/banner/banner-hero.png') no-repeat center center/cover;
-  padding: 100px 20px;
-  text-align: center;
+    background: url("../img/banner/banner-hero.png") no-repeat center
+        center/cover;
+    padding: 100px 20px;
+    text-align: center;
 }
 
 /* Support */
 .partner {
-  background: var(--secondary);
+    background: var(--secondary);
 }
 
 .partner-logo {
-  margin: 0 auto;
-  max-width: 100px;
-  opacity: 0px;
+    margin: 0 auto;
+    max-width: 100px;
+    opacity: 0px;
 }
 
 /* CTA */
 .cta-container {
-  background: url('../img/banner/banner-cta.png') no-repeat center center/cover;
+    background: url("../img/banner/banner-cta.png") no-repeat center
+        center/cover;
 }
 
 .cta {
-  background: var(--hover);
-  color: #fff;
+    background: var(--hover);
+    color: #fff;
 }
 
 .cta h1 {
-  color: var(--dark);
+    color: var(--dark);
 }
 
 .cta p {
-  color: var(--dark-secondary);
+    color: var(--dark-secondary);
 }
 
 /* Kenapa Kelas Center */
 .kenapa-kelas-center .card-kenapa {
-  background-color: var(--light);
-  border-radius: 0.3rem;
+    background-color: var(--light);
+    border-radius: 0.3rem;
 }
 
 .kenapa-kelas-center .card-kenapa:hover {
-  background-color: var(--hover-card);
-  border-radius: 0.3rem;
+    background-color: var(--hover-card);
+    border-radius: 0.3rem;
 }
 
 .kenapa-kelas-center .bg-kenapa-kelas-center {
-  background-color: var(--primary);
+    background-color: var(--primary);
 }
 
 /* Scrollable partner logos */
 .scroll-container {
-  overflow-x: auto;
-  white-space: nowrap;
-  margin: 20px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 20px 0;
 }
 
 .scroll-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .scroll-item {
-  flex: 0 0 auto;
-  margin: 0 10px;
+    flex: 0 0 auto;
+    margin: 0 10px;
 }
 
 .partner-logo {
-  max-width: 100px;
-  height: auto;
+    max-width: 100px;
+    height: auto;
 }
 
 .scroll-indicators {
-  text-align: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .indicator {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #ddd;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .indicator.active {
-  background-color: var(--primary);
+    background-color: var(--primary);
 }
 
 /* Learning */
 .learning {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
 .learning .container {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .learning .card img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .learning .carousel-item {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 767.98px) {
-  .learning .card {
-    margin-bottom: 15px;
-  }
-  .learning .carousel-item .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
+    .learning .card {
+        margin-bottom: 15px;
+    }
+    .learning .carousel-item .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media (min-width: 768px) {
-  .learning .carousel-item .col-md-4 {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-  }
+    .learning .carousel-item .col-md-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
 }
 
 .learning .btn-outline-kelas {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /* Media queries */
 @media (max-width: 768px) {
-  .hero {
-    padding: 50px 20px;
-  }
+    .hero {
+        padding: 50px 20px;
+    }
 
-  .hero h1 {
-    font-size: 2.5rem;
-  }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
 
-  .hero .lead {
-    font-size: 1.25rem;
-  }
+    .hero .lead {
+        font-size: 1.25rem;
+    }
 
-  .partner .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .partner .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-  .partner-logo {
-    margin: 10px;
-  }
+    .partner-logo {
+        margin: 10px;
+    }
 
-  .btn-primary-kelas,
-  .btn-outline-kelas,
-  .btn-tertiory-kelas {
-    max-width: 300px;
-  }
+    .btn-primary-kelas,
+    .btn-outline-kelas,
+    .btn-tertiory-kelas {
+        max-width: 300px;
+    }
 
-  .cta {
-    padding: 30px 20px;
-  }
+    .cta {
+        padding: 30px 20px;
+    }
 
-  .kenapa-kelas-center .card-kenapa {
-    margin-bottom: 20px;
-  }
+    .kenapa-kelas-center .card-kenapa {
+        margin-bottom: 20px;
+    }
 
-  .row-scroll {
-    overflow: auto;
-    display: flex;
-    flex-wrap: nowrap;
-  }
+    .row-scroll {
+        overflow: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
-  .col-scroll {
-    min-width: 200px;
-  }
+    .col-scroll {
+        min-width: 200px;
+    }
 }

@@ -6,7 +6,7 @@
             <div class="card-body">
                 <h5 class="card-title">Edit Category Benefits</h5>
 
-                <form action="{{ route('categoryBenefits.update', $benefit->id) }}" method="POST">
+                <form action="{{ route('categoryKelas.update', $benefit->id) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="form-group">

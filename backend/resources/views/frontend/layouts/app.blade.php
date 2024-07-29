@@ -94,34 +94,26 @@
 
       <div class="container">
         <div class="row text-start benefit-section">
-          <div class="col-md-6">
-            <h4 class="fw-bold mb-3">Optimalkan potensi karyawan Anda dengan Learning Management System (LMS)</h4>
-            <div class="d-md-none mb-4">
-              <div class="bg-light" style="height: 300px; width: 100%"></div>
-            </div>
-            <p class="lead mb-4">
-              Berdayakan tim Anda untuk mencapai kesuksesan dengan data yang akurat dan solusi pembelajaran yang terintegrasi. Transformasikan pengelolaan sumber daya manusia Anda dan hadirkan
-              produktivitas yang unggul dengan LMS kami!
-            </p>
+        @foreach($benefits as $benefit)
+            <div class="col-md-6">
+                <h4 class="fw-bold mb-3">{{ $benefit->title }}</h4>
+                <div class="d-md-none mb-4">
+                    <div class="bg-light" style="height: 300px; width: 100%"></div>
+                </div>
+                <p class="lead mb-4">
+                    {{ $benefit->description }}
+                </p>
 
-            <div class="mb-4">
-              <div class="bg-light py-2">
-                <div class="d-flex" style="line-height: 32px"><i class="bi bi-check-lg mx-2" style="font-size: 2rem"></i> Issued Certificate</div>
-              </div>
-              <p class="lead mb-4 mt-2">Berikan kemudahan dalam mengatur dan mendistribusikan sertifikat kepada setiap karyawan.</p>
-              <div class="bg-light py-2">
-                <div class="d-flex" style="line-height: 32px"><i class="bi bi-check-lg mx-2" style="font-size: 2rem"></i> Issued Certificate</div>
-              </div>
-              <p class="lead mb-4 mt-2">Berikan kemudahan dalam mengatur dan mendistribusikan sertifikat kepada setiap karyawan.</p>
-              <div class="bg-light py-2">
-                <div class="d-flex" style="line-height: 32px"><i class="bi bi-check-lg mx-2" style="font-size: 2rem"></i> Issued Certificate</div>
-              </div>
-              <p class="lead mb-4 mt-2">Berikan kemudahan dalam mengatur dan mendistribusikan sertifikat kepada setiap karyawan.</p>
+               <div class="bg-light py-2">
+                        <div class="d-flex" style="line-height: 32px"><i class="bi bi-check-lg mx-2" style="font-size: 2rem"></i> {{ $benefit->benefits }}</div>
+                    </div>
+                    {{-- <p class="lead mb-4 mt-2">{{ $benefit->description }}</p> --}}
             </div>
+
+            <div class="col-md-6 d-none d-md-block">
+                 <div class="bg-light" style="height: 400px; width: 100%"></div>
           </div>
-          <div class="col-md-6 d-none d-md-block">
-            <div class="bg-light" style="height: 400px; width: 100%"></div>
-          </div>
+        @endforeach
         </div>
       </div>
     </section>
@@ -263,9 +255,9 @@
             kualitas tinggi.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-4">
-            <button id="btnKelasCom" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">Kelas.com</button>
-            <button id="btnKelasWork" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">Kelas.work</button>
-            <button id="btnBootcamp" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">Bootcamp</button>
+              @foreach($categoryKelas as $category)
+                <button id="btn{{ $category->name }}" type="button" class="btn btn-outline-kelas btn-lg px-4 gap-3">{{ $category->name }}</button>
+            @endforeach
           </div>
 
           <div id="carouselKelasCom" class="carousel slide py-5 video-section" data-bs-ride="carousel">

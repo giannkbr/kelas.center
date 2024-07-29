@@ -5,7 +5,7 @@
     <h1>Category Benefits</h1>
     <nav>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="{{ route('categoryBenefit.index') }}">Category Benefits</a></li>
+            <li class="breadcrumb-item active"><a href="{{ route('benefits.index') }}">Category Benefits</a></li>
             {{-- <li class="breadcrumb-item active">nama halaman aktif</li> --}}
         </ol>
     </nav>
@@ -28,7 +28,7 @@
                     {{-- <h5 class="card-title">Category</h5> --}}
 
                     <div class="mb-3 mt-3">
-                        <a href="{{ route('categoryBenefit.create') }}" class="btn btn-primary">Add Category</a>
+                        <a href="{{ route('benefits.create') }}" class="btn btn-primary">Add Category</a>
                     </div>
 
                     <!-- Table with stripped rows -->
@@ -36,16 +36,23 @@
                         <thead>
                             <tr>
                                 <th>Title</th>
-
+                                <th>Category</th>
+                                <th>URL</th>
+                                <th>Description</th>
+                                <th>Benefits</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        @foreach ($categories as $category)
+                        @foreach ($benefits as $benefit)
                         <tr>
-                            <td>{{ $category->name }}</td>
+                            <td>{{ $benefit->title }}</td>
+                            <td>{{ $benefit->category->name }}</td>
+                            <td>{{ $benefit->url }}</td>
+                            <td>{{ $benefit->description }}</td>
+                            <td>{{ $benefit->benefits }}</td>
                             <td>
-                                <a href="{{ route('categoryBenefit.edit', $category->id) }}" class="btn btn-primary">Edit</a>
-                                <form action="{{ route('categoryBenefit.destroy', $category->id) }}" method="POST"
+                                <a href="{{ route('benefits.edit', $benefit->id) }}" class="btn btn-primary">Edit</a>
+                                <form action="{{ route('benefits.destroy', $benefit->id) }}" method="POST"
                                     style="display:inline">
                                     @csrf
                                     @method('DELETE')
