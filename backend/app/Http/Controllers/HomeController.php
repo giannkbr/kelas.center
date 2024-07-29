@@ -11,11 +11,6 @@ use App\Models\Kelas;
 class HomeController extends Controller
 {
 
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
-
 	function index()
 	{
         $benefits = Benefits::all();
