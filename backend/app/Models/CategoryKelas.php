@@ -11,4 +11,9 @@ class CategoryKelas extends Model
 
     protected $fillable = ['name'];
 
+    public function kelas()
+    {
+        return $this->hasMany(Kelas::class);
+    }
+
 }

@@ -10,4 +10,9 @@ class Mentor extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'email', 'profession'];
+
+    public function kelas()
+    {
+        return $this->belongsToMany(Kelas::class);
+    }
 }

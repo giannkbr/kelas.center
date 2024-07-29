@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\CategoryBenefits;
 use App\Models\Benefits;
 use App\Models\CategoryKelas;
+use App\Models\Kelas;
 
 class HomeController extends Controller
 {
@@ -20,6 +21,9 @@ class HomeController extends Controller
         $benefits = Benefits::all();
         $categoryBenefits = CategoryBenefits::all();
         $categoryKelas = CategoryKelas::all();
-        return view('frontend.layouts.app', compact('categoryBenefits' , 'benefits', 'categoryKelas'));
+        $kelas = Kelas::all();
+
+        // var_dump($kelas);exit;
+        return view('frontend.layouts.app', compact('categoryBenefits' , 'benefits', 'categoryKelas', 'kelas'));
 	}
 }

@@ -13,7 +13,7 @@
                         <div class="col-sm-10">
                             <select class="form-control" id="inputSelect" name="category_id">
                                 @foreach($categoryBenefits as $categoryBenefit)
-                                    <option value="{{ $categoryBenefit->id }}">{{ $categoryBenefit->name }}</option>
+                                <option value="{{ $categoryBenefit->id }}">{{ $categoryBenefit->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -33,13 +33,13 @@
                     <div class="row mb-3">
                         <label for="input" class="col-sm-2 col-form-label">Description</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputText" name="description">
+                            <textarea name="description" class="form-control" cols="30" rows="10"></textarea>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <label for="input" class="col-sm-2 col-form-label">Benefits</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputText" name="benefits">
+                            <textarea class="form-control" cols="30" rows="10" name="benefits"></textarea>
                         </div>
                     </div>
                     <div class="text-center">

@@ -116,6 +116,10 @@ a {
     opacity: 0px;
 }
 
+.benefit-content {
+    display: none;
+}
+
 /* CTA */
 .cta-container {
     background: url("../img/banner/banner-cta.png") no-repeat center
