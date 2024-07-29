@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(KelasSeeder::class);
         $this->call(SubscriptionsSeeder::class);
         $this->call(WatchtimeSeeder::class);
+        $this->call(CategoryBenefitSeeder::class);
+        $this->call(BenefitsSeeder::class);
     }
 }
